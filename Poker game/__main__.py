@@ -32,7 +32,7 @@ class PokerGameGUI:
 
         self.num_players = sd.askinteger("Number of Players", "Enter the number of players:", minvalue=2, maxvalue=6)
             
-        backdrop_path = "D:/Py Test/Poker game/backdrop_design/xdxfdc9.jpg"
+        backdrop_path = "Poker game\\backdrop_design\\xdxfdc9.jpg"
         self.backdrop_image = self.load_image(backdrop_path)
         self.backdrop_canvas = tk.Canvas(self.master, width=800, height=600)
         self.backdrop_canvas.pack()

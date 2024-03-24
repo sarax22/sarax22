@@ -1,6 +1,5 @@
 import random
 import itertools
-from __init__ import Counter
 
 class Player(object):
     def __init__(self, name=None):

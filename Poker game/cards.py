@@ -15,8 +15,8 @@ class Card(object):                                      #creating a class for t
          self.suit = suit
             
      def __repr__(self):                                                                   #using repr to represent cards as actual suits and values not just numbers
-        value_name = ["2", "3", "4", "5", "6", "7", "8", "9", "T", "J", "Q", "K", "A"]
-        suit_name = ["hearts","diamonds", "clubs","spades"]
+        value_name = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"]
+        suit_name = ["♥","♦", "♣","♠"]
         return f"{value_name[self.value]} of {suit_name[self.suit]}"                                           #returns each card as actual cards aka ace of diamonds
 
      def get_image_filename(self):
@@ -47,14 +47,3 @@ class StandardDeck(list):
 deck = StandardDeck()
 print(deck)
 
-# Assuming you have a card object
-test_card = Card(2, 0)  # For example, 2 of hearts
-
-# Get the image filename
-filename = test_card.get_image_filename()
-
-# Load the image using PIL
-image = Image.open(filename)
-
-# Display the image
-image.show()
